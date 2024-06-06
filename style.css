@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    Font-size: 15px;
+}
+
+:root {
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --SoftPink: hsl(333, 80%, 67%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+@media screen and (max-width:600px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 50px;
+    }
+    
+    .hero-text h1 {
+        width: 250px;
+        font-size: 30px;
+        line-height: 25px;
+        font-weight: 700;
+        text-align: center;
+        color: var(--VeryDarkMagenta);
+    }
+    
+    .hero-text p {
+        color: var(--VeryDarkMagenta);
+        font-weight: 500;
+        text-align: center;
+        width: 300px;
+        padding-top: 20px;
+        line-height: 20px;
+    }
+    
+    .review-card1,
+    .review-card2,
+    .review-card3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        width: 350px;
+        height: 70px;
+        background-color: var(--LightGrayishMagenta);
+        margin: 20px;
+        border-radius: 7px
+    }
+
+    
+    
+    
+}
+
+
+@media screen and (min-width:601px) {
+    
+    .hero {
+        display: flex;
+        gap: 100px;
+    }
+    
+    .hero-text h1 {
+        width: 350px;
+        font-size: 50px;
+        line-height: 40px;
+        font-weight: 700;
+        color: var(--VeryDarkMagenta);
+    }
+    
+    .hero-text p {
+        color: var(--VeryDarkMagenta);
+        font-weight: 500;
+        width: 380px;
+        padding-top: 20px;
+        line-height: 20px;
+    }
+    
+    .review-card1,
+    .review-card2,
+    .review-card3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        width: 350px;
+        height: 50px;
+        background-color: var(--LightGrayishMagenta);
+        margin: 10px;
+        border-radius: 7px
+    }
+    
+    .review-card2 {
+        margin-left: 50px;
+    }
+    
+    .review-card3 {
+        margin-left: 100px;
+    }
+}
